@@ -1,0 +1,114 @@
+body{
+    
+    background: url(../imagenes/fondo_page-0001.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.FondoMover{
+    animation: fondoMover 10s infinite linear;
+}
+
+
+ .contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.avion{
+    width: 48rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.llanta{
+    width: 4rem;
+    position: absolute;
+    top: 24rem;
+    left: 53rem;
+   
+}
+
+.llantaMover{
+    animation: llantaMover 2s infinite linear reverse;
+}
+
+.llanta2{
+    width: 4rem;
+    position: absolute;
+    top: 24rem;
+    left: 33rem;
+    
+}
+
+.llanta2Mover{
+    animation: llantaMover 2s infinite linear reverse;
+}
+
+.luces{
+    width: 20rem;
+    position: absolute;
+    top: 22rem;
+    left: 15rem;
+    
+    
+}
+.oculto{
+    display: none;
+}
+
+.lucesMover{
+    animation: lucesEncender 2s infinite linear reverse;
+}
+
+.fuego{
+    position: absolute;
+    left:65rem;
+    background-image: url(../imagenes/Sprite.png);
+    width:126.86px;
+    height: 80px;
+   
+    
+}
+
+.fuegoMover{
+    animation: humomover steps(6) infinite 2s;
+}
+.oculto1{
+    display: none;
+}
+
+@keyframes llantaMover {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fondoMover {
+        100%{
+            background-position-x: 10000px;
+        }
+}
+
+
+@keyframes lucesEncender{
+    0% {
+        opacity: 0%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes humomover{
+    100%{
+        background-position-x: 761px;
+
+    }
+}
